@@ -1,0 +1,5 @@
+Look at the laptop in this cropped image. Determine its physical state:
+1. Is the laptop screen open and upright?
+2. Is the laptop lid shut flat and closed?
+
+Answer strictly with exactly one word: OPEN or CLOSED.

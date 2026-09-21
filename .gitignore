@@ -1,3 +1,27 @@
+# Local Python environment and caches
 python312_env/
-videos/
 __pycache__/
+*.py[cod]
+
+# Files used by the alternate pipeline or Jetson launcher
+run_pipeline_local_hf.py
+start_agent_studio.sh
+AutoPrompt.txt
+Auto Prompt.txt
+Chat Node.txt
+jetson-containers/
+NanoLLM/
+data/
+
+# YOLO weights; Ultralytics downloads yolov8s.pt when absent
+yolov8n.pt
+yolov8s.pt
+
+# Hybrid pipeline outputs and temporary media
+videos/*
+*.wav
+*.m4a
+
+# Keep generated hybrid output out of Git even if video rules change
+videos/output_hybrid.mp4
+videos/temp_silent.mp4

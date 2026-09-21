@@ -55,9 +55,9 @@ class SafetyAlertPlugin(Plugin):
 
     def trigger_alert(self, event_description: str, severity: str = "warning") -> str:
         """
-        Send a real-time safety alert and speak it over the facility speakers.
-        Call this function whenever a school bus, unauthorized vehicle,
-        person without PPE, or monitored hazard enters the camera frame.
+        Send a real-time safety or SOP compliance alert and speak it over the speakers.
+        Call this function whenever a safety hazard occurs or an SOP is violated 
+        (e.g., an unattended open laptop, incorrect ingredient portions, etc.).
 
         Args:
             event_description (str): A concise description of the detected object, vehicle, or event.
